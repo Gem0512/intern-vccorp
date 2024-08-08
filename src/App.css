@@ -1,0 +1,150 @@
+/* App.css */
+
+/* Cải thiện kiểu dáng chung của ứng dụng */
+.container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tiêu đề của ứng dụng */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Nút thêm nhiệm vụ */
+button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* Các nút với màu sắc khác nhau */
+.bg-blue-600 { background-color: #1d4ed8; }
+.bg-blue-700 { background-color: #1e40af; }
+.bg-green-500 { background-color: #10b981; }
+.bg-green-600 { background-color: #059669; }
+.bg-yellow-500 { background-color: #facc15; }
+.bg-yellow-600 { background-color: #eab308; }
+.bg-red-500 { background-color: #ef4444; }
+.bg-red-600 { background-color: #dc2626; }
+.bg-gray-500 { background-color: #6b7280; }
+.bg-gray-600 { background-color: #4b5563; }
+
+/* Kiểu dáng của ô chọn và tiêu đề nhiệm vụ */
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-wrapper .custom-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-right: 15px
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.checkbox-wrapper .custom-checkbox::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: white;
+  display: block;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .custom-checkbox::before {
+  transform: scale(1);
+}
+
+/* Kiểu dáng của danh sách nhiệm vụ */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li .task-title {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #888;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+select {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* Các nút hành động và kiểm tra nhiều nhiệm vụ */
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
